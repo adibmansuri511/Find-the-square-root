@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate the Area of a Triangle</title>
+    <title>Find The Square Root</title>
     <!-- Bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,20 +20,17 @@
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
-                        <h1 class="text-center pb-2">Triangle Area Calculator</h1>
+                        <h1 class="text-center pb-2">Square Root Calculator</h1>
                         <form action="" method="get">
                             <div class="text-center pt-3">
-                                <label for="baseValue">Enter the base of the triangle:</label>
-                                <input type="number" name="base" id="base">
+                                <label for="getValue">
+                                    <h5>Enter the number :</h5>
+                                </label>
+                                <input class="mx-2" type="number" name="square-root" id="getValue">
+                                <button class="btn btn-primary mx-2 mb-1" onclick="squareRoot()" type="button">Calculate
+                                    Square Root</button>
                             </div>
-                            <div class="text-center pt-4">
-                                <label for="baseValue">Enter the height of the triangle:</label>
-                                <input type="number" name="height" id="height">
-                            </div>
-                            <div class="d-flex justify-content-center pt-5">
-                                <button class="btn btn-dark" onclick="calculate()" type="button">Calculate Area</button>
-                            </div>
-                            <div class="text-center pt-5">
+                            <div class="text-center mt-5">
                                 <h4 id="h4"></h4>
                             </div>
                         </form>

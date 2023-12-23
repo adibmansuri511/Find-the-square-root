@@ -1,18 +1,15 @@
-const calculate = () => {
+const squareRoot = () => {
 
     // Get base value from input
-    let base = Number(document.getElementById("base").value);
+    const getValue = Number(document.getElementById("getValue").value);
 
-    // Get height value from input
-    let height = Number(document.getElementById("height").value);
+    let squareRoot = Math.sqrt(getValue);
 
-    let triangleArea = Math.ceil(((1 / 2) * base * height));
+    squareRoot = `The square root of ${getValue} is : ${squareRoot}`;
 
-    triangleArea = `The area of the triangle is: ${triangleArea}`;
+    console.log(squareRoot);
 
-    console.log(triangleArea);
-
-    document.querySelector("#h4").innerHTML = triangleArea;
+    document.querySelector("#h4").innerHTML = squareRoot;
 
     return;
 }
